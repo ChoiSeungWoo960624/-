@@ -1,0 +1,18 @@
+import time
+
+def allocate_memory():
+    data = []
+    try:
+        for i in range(10**9):
+            data.append(i)
+            if i % 10**7 == 0:
+                time.sleep(0.1)
+    except MemoryError:
+        print("Memory allocation failed.")
+    return data
+
+if __name__ == "__main__":
+    allocate_memory()
+    time.sleep(600)
+
+    //https://github.com/ChoiSeungWoo960624/-.git
